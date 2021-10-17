@@ -1,0 +1,1 @@
+The goal of the project is to add a system call to xv6. Our system call, getiocount(), simply returns how many times that the read() and write() system call has been called by user processes since the time that the kernel was booted.
