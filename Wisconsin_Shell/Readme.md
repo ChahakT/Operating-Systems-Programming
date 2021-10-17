@@ -1,0 +1,1 @@
+We are implementing a command line interpreter (CLI) or, as it is more commonly known, a shell. The shell operates in this basic way: when we type in a command (in response to its prompt), the shell creates a child process that executes the command we entered and then prompts for more user input when it has finished.
