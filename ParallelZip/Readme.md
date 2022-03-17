@@ -1,4 +1,5 @@
 Parallel Zip
+
 In an earlier project, you implemented a simple compression tool based on run-length encoding, known simply as zip. Here, you'll implement something similar, except you'll use threads to make a parallel version of zip. We'll call this version ... wait for it ... pzip.
 
 There are three specific objectives to this assignment:
