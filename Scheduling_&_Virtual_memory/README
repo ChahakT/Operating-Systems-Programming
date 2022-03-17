@@ -1,0 +1,7 @@
+Proportional share scheduler and Null Pointer dereference:
+
+1) For proportional share scheduler, I have set the default tickets in allocproc. There is a system call which resets these tickets. Fork copies tickets to child process. In the scheduler function, I loop the process to run for as much time slices as their no. of tickets.
+
+2) For Null pointer dereference, I have shifted the physical memory mapping to start from 1st page as compared to 0th page.
+
+3) I have included the graph in processGraph file and I have also displayed the accumulated ticks in tickscount file. For checking the running of this, please comment line 371-373(for graph) and 377-78(for accumulated ticks)  in proc.c and run test file testGraph.c 
