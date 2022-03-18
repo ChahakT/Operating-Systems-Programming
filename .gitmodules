@@ -1,0 +1,3 @@
+[submodule "xv6Locks_&_Conditions/xv6-public"]
+	path = xv6Locks_&_Conditions/xv6-public
+	url = git@github.com:ChahakT/Operating-Systems-Programming.git
