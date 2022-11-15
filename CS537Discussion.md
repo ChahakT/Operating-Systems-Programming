@@ -6,7 +6,8 @@ A common use might be to control access to a data structure in memory that canno
 **Priority Policies:**
 RW locks can be designed with different priority policies for reader vs. writer access. The lock can either be designed to always give priority to readers (read-preferring), to always give priority to writers (write-preferring). These policies lead to different tradeoffs with regards to concurrency and starvation.
 
-Read-preferring RW locks allow for maximum concurrency, but can lead to write-starvation if contention is high. Writer threads will starve while new reader threads will be able to acquire the lock as long as atleast one reader thread is holding the lock.
+**Read-preferring RW locks **
+They allow for maximum concurrency, but can lead to write-starvation if contention is high. Writer threads will starve while new reader threads will be able to acquire the lock as long as atleast one reader thread is holding the lock.
 
 Implementation:
 Initialization :
@@ -19,7 +20,8 @@ g = ensures mutual exclusion of writers.
 ![Screen Shot 2022-11-15 at 13 22 49](https://user-images.githubusercontent.com/20151037/202007846-0758b1ff-3b77-4d2b-a696-cdf4c3de26f5.png)
 
 
-Write-preferring RW locks avoid the problem of writer starvation by preventing any new readers from acquiring the lock if there is a writer queued and waiting for the lock. Write-preferring locks allows for less concurrency in the presence of writer threads, compared to read-preferring RW locks. 
+**Write-preferring RW locks **
+They avoid the problem of writer starvation by preventing any new readers from acquiring the lock if there is a writer queued and waiting for the lock. Write-preferring locks allows for less concurrency in the presence of writer threads, compared to read-preferring RW locks. 
 
 ![Screen Shot 2022-11-15 at 13 22 59](https://user-images.githubusercontent.com/20151037/202007868-dbd9b7b9-a0c4-4b92-b688-4fd4e4acc197.png)
 
