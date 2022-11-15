@@ -39,6 +39,7 @@ writer_active: whether a writer has acquired the lock
 Practice Questions on Concurrency:
 
 Q1. Given a thread safe implementation of add() :
+
 ![Screen Shot 2022-11-15 at 14 28 51](https://user-images.githubusercontent.com/20151037/202019062-0500a634-cef6-4730-9178-ebd633f8f202.png)
 
 Replace the lock with atomic hardware instruction CmpAndSwap(int* addr, int expect, int new) which returns 0 on failure and 1 on success.
